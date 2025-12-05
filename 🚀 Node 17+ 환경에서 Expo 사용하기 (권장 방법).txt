@@ -95,3 +95,11 @@ https://hell-of-company-builder.tistory.com/426#google_vignette
 
 #https://reactnative.dev/docs/scrollview
 항상 메뉴얼 확인
+
+# 빌드하기
+npm install -g eas-cli
+로그인하기 eas login
+플랫폼 선택하기
+eas.json 에서 aab 파일 또는 apk 파일 생성 설정, "buildType": "apk"
+eas build -p android
+eas build -p android --profile preview
